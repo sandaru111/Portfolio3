@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandaru Kanchana | GIS Explorer & IR Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">SK<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#gis">GIS</a></li>
+            <li><a href="#ir">IR</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>Sandaru Kanchana</h1>
+            <p class="tagline">GIS Explorer | IR Researcher | Traveller</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn primary">View Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">The Journey So Far</h2>
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <p>I am a GIS Undergraduate at the <strong>University of Peradeniya</strong> and an International Relations Undergraduate, blending the world of spatial data with global political dynamics.</p>
+                    <p>My mission is to explore the intersection of geography, policy, and human storytelling. Whether it's mapping terrain or analyzing diplomatic shifts, I look for the narrative behind the data.</p>
+                    <div class="skills-tags">
+                        <span>Spatial Analysis</span> <span>Cartography</span> <span>Geopolitics</span> 
+                        <span>Policy Research</span> <span>Digital Storytelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="card reveal" onclick="openModal('research-modal')">
+                    <div class="card-img"><i class="fas fa-microscope"></i></div>
+                    <h3>Research Projects</h3>
+                    <p>Academic papers and GIS-IR integrated studies.</p>
+                </div>
+                <div class="card reveal" onclick="openModal('story-modal')">
+                    <div class="card-img"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Story Maps</h3>
+                    <p>Interactive spatial narratives built with GIS tools.</p>
+                </div>
+                <div class="card reveal" onclick="openModal('content-modal')">
+                    <div class="card-img"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Public Content</h3>
+                    <p>Articles, blog posts, and academic writing.</p>
+                </div>
+                <div class="card reveal" onclick="openModal('vlog-modal')">
+                    <div class="card-img"><i class="fas fa-video"></i></div>
+                    <h3>Travel Vlogs</h3>
+                    <p>Cinematic captures of my journeys across the globe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gis" class="section theme-gis">
+        <div class="container">
+            <h2 class="section-title reveal">GIS & Spatial Analysis</h2>
+            <div class="gis-content reveal">
+                <div class="feature-text">
+                    <h3>Mapping the Earth</h3>
+                    <p>Specializing in terrain modeling and spatial data visualization. My work focuses on environmental monitoring and urban planning using industry-standard tools.</p>
+                </div>
+                <div class="gis-visual">
+                    <div class="map-placeholder">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ir" class="section theme-ir">
+        <div class="container">
+            <h2 class="section-title reveal">International Relations</h2>
+            <div class="ir-content reveal">
+                <div class="ir-paper">
+                    <span>Research Insight</span>
+                    <h3>Diplomacy in the Modern Age</h3>
+                    <p>Analyzing the shift in global power dynamics and the role of GIS in tracking geopolitical changes. Structured research focusing on policy impact and regional stability.</p>
+                    <a href="#" class="read-more">Read Full Report →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="travel" class="section theme-travel">
+        <div class="container">
+            <h2 class="section-title reveal">Travel & Stories</h2>
+            <div class="travel-gallery reveal">
+                <div class="gallery-item">
+                    <div class="overlay"><h4>Mist of Peradeniya</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="overlay"><h4>Coastal Chronicles</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="overlay"><h4>Deep Forest Narratives</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-wrapper reveal">
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.fiverr.com/" target="_blank"><i class="fas fa-briefcase"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sandaru Kanchana. Built for the modern explorer.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
